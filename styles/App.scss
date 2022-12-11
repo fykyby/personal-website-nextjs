@@ -1,0 +1,54 @@
+@use "./shared.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: shared.$textColor2;
+}
+
+body {
+  line-height: 1.3;
+  letter-spacing: 0.08rem;
+  overflow-x: hidden;
+}
+
+h1 {
+  letter-spacing: 0.14rem;
+  font-weight: bold;
+  font-size: 2rem;
+  color: shared.$textColor2;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 1.2rem;
+  color: shared.$textColor3;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: shared.$textColor2;
+}
+
+@media (min-width: shared.$breakpoint1) {
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: shared.$breakpoint3) {
+  h3 {
+    font-size: 2rem;
+  }
+}

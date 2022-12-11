@@ -1,0 +1,26 @@
+$colorBg1: #041c32;
+$colorBg2: #04293a;
+$colorBg3: #064663;
+
+$textColor: black;
+$textColor2: white;
+$textColor3: rgb(151, 151, 151);
+
+$shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.5);
+$shadowInset: inset 2px 2px 8px 0px rgba(0, 0, 0, 0.5);
+
+$borderRadius: 0.6rem;
+
+$breakpoint1: 540px;
+$breakpoint2: 770px;
+$breakpoint3: 1000px;
+
+.App {
+  --dividerHeight: 34px;
+}
+
+@media (min-width: $breakpoint2) {
+  .App {
+    --dividerHeight: 80px;
+  }
+}

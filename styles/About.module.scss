@@ -1,0 +1,98 @@
+@use "./shared.scss";
+
+.About {
+  background-color: shared.$colorBg1;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    width: 100%;
+    gap: 0.4rem;
+    top: 0;
+    right: 0;
+    padding: 0.4rem;
+
+    a,
+    button {
+      color: shared.$textColor2;
+      background-color: transparent;
+      border: none;
+      text-decoration: none;
+      padding: 0.4rem;
+      font-size: 1.1rem;
+      transition: background-color 0.2s ease-in-out;
+      position: relative;
+      cursor: pointer;
+      line-height: inherit;
+      letter-spacing: inherit;
+
+      &:hover {
+        background-color: shared.$colorBg2;
+
+        &::after {
+          width: 100%;
+        }
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        border-bottom: 2px solid shared.$textColor2;
+        height: 2px;
+        width: 0%;
+        right: 0;
+        bottom: 0;
+        transition: width 0.2s ease-in-out;
+      }
+    }
+  }
+
+  h2 {
+    &::after {
+      position: absolute;
+      content: "_";
+      animation-name: anim;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+  }
+
+  @keyframes anim {
+    from {
+      content: "";
+    }
+    to {
+      content: "_";
+    }
+  }
+}
+
+@media (min-width: shared.$breakpoint1) {
+  .About {
+    nav {
+      a,
+      button {
+        padding: 0.8rem;
+      }
+    }
+  }
+}
+
+@media (min-width: shared.$breakpoint3) {
+  .About {
+    nav {
+      width: shared.$breakpoint3;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+    }
+  }
+}
