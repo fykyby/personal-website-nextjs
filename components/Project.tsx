@@ -40,6 +40,7 @@ export default function Project(props: Props): JSX.Element {
             <a href={props.repoLink} target="_blank" rel="noreferrer">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                alt="GitHub icon"
                 className={styles.ghIcon}
               />
             </a>
