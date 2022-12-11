@@ -8,11 +8,6 @@ export default function App(): JSX.Element {
   return (
     <main className="App">
       <Head>
-        <link rel="icon" type="image/x-icon" href="./favicon.ico" />
-        <meta
-          name="description"
-          content="Filip Bodnar - Frontend Developer - Personal Website"
-        />
         <title>Filip Bodnar - Frontend Developer</title>
       </Head>
 

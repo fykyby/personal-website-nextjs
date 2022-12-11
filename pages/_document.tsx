@@ -8,6 +8,11 @@ export default function Document(): JSX.Element {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
         />
+        <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+        <meta
+          name="description"
+          content="Filip Bodnar - Frontend Developer - Personal Website"
+        />
       </Head>
       <body>
         <Main />
