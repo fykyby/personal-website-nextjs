@@ -20,7 +20,7 @@ export default function Project(props: Props): JSX.Element {
 
   return (
     <article className={styles.Project} data-aos="fade-left">
-      <Image src={props.img} alt="project screenshot" />
+      <img src={props.img.src} alt="project screenshot" />
       <div className={styles.info}>
         <h3 className={styles.title}>{props.title}</h3>
         <div className={styles.bottomWrapper}>
