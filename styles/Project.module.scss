@@ -7,6 +7,7 @@
   border-radius: shared.$borderRadius;
   width: 100%;
   position: relative;
+  overflow: hidden;
 
   &::after {
     content: "";
@@ -23,6 +24,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     border-top-left-radius: shared.$borderRadius;
     border-top-right-radius: shared.$borderRadius;
   }
@@ -150,6 +152,7 @@
 @media (min-width: shared.$breakpoint2) {
   .Project {
     flex-direction: row;
+    max-height: 80vh;
 
     .projectImage {
       width: 60%;

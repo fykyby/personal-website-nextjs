@@ -20,11 +20,13 @@ $breakpoint2: 48rem;
 $breakpoint3: 65rem;
 
 .App {
-  --dividerHeight: 34px;
+  // --dividerHeight: 34px;
+  --dividerHeight: 2rem;
 }
 
 @media (min-width: $breakpoint2) {
   .App {
-    --dividerHeight: 80px;
+    // --dividerHeight: 80px;
+    --dividerHeight: 5rem;
   }
 }
