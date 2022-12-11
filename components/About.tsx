@@ -38,8 +38,8 @@ export default function About(): JSX.Element {
         </a>
         <button onClick={() => scrollToSection("#Contact")}>Contact</button>
       </nav>
-      <h1>Filip Bodnar</h1>
-      <h2>{`~$ ${text}`}</h2>
+      <h1 data-aos="fade-left">Filip Bodnar</h1>
+      <h2 data-aos="fade-left">{`~$ ${text}`}</h2>
     </section>
   );
 }
