@@ -11,9 +11,13 @@ $shadowInset: inset 2px 2px 8px 0px rgba(0, 0, 0, 0.5);
 
 $borderRadius: 0.6rem;
 
-$breakpoint1: 540px;
-$breakpoint2: 770px;
-$breakpoint3: 1000px;
+// $breakpoint1: 540px;
+// $breakpoint2: 770px;
+// $breakpoint3: 1000px;
+
+$breakpoint1: 35rem;
+$breakpoint2: 48rem;
+$breakpoint3: 65rem;
 
 .App {
   --dividerHeight: 34px;
