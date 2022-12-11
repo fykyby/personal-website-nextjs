@@ -40,8 +40,14 @@ export default function Projects(): JSX.Element {
           repoLink={"https://github.com/fykyby/music-player-for-youtube"}
           demoLink={"https://fykyby.github.io/music-player-for-youtube/"}
           techIcons={[
-            "devicon-typescript-plain colored",
-            "devicon-react-original colored",
+            {
+              url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+              name: "TypeScript",
+            },
+            {
+              url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+              name: "React",
+            },
           ]}
         />
         <Project
@@ -50,9 +56,18 @@ export default function Projects(): JSX.Element {
           repoLink={"https://github.com/fykyby/fake-instagram"}
           demoLink={"https://fykyby.github.io/fake-instagram/"}
           techIcons={[
-            "devicon-react-original colored",
-            "devicon-tailwindcss-plain colored",
-            "devicon-firebase-plain colored",
+            {
+              url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+              name: "React",
+            },
+            {
+              url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+              name: "Tailwind",
+            },
+            {
+              url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+              name: "Firebase",
+            },
           ]}
         />
         <Project
@@ -61,9 +76,18 @@ export default function Projects(): JSX.Element {
           repoLink={"https://github.com/fykyby/akacjowy-kalkulator"}
           demoLink={""}
           techIcons={[
-            "devicon-typescript-plain colored",
-            "devicon-react-original colored",
-            "devicon-electron-original colored",
+            {
+              url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+              name: "TypeScript",
+            },
+            {
+              url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+              name: "React",
+            },
+            {
+              url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg",
+              name: "Electron",
+            },
           ]}
           noDemo
         />
@@ -73,8 +97,14 @@ export default function Projects(): JSX.Element {
           repoLink={"https://github.com/fykyby/battleship"}
           demoLink={"https://fykyby.github.io/battleship/"}
           techIcons={[
-            "devicon-javascript-plain colored",
-            "devicon-css3-plain colored",
+            {
+              url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+              name: "JavaScript",
+            },
+            {
+              url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+              name: "CSS",
+            },
           ]}
         />
         <Project
@@ -83,8 +113,14 @@ export default function Projects(): JSX.Element {
           repoLink={"https://github.com/fykyby/snake"}
           demoLink={"https://fykyby.github.io/snake/"}
           techIcons={[
-            "devicon-javascript-plain colored",
-            "devicon-css3-plain colored",
+            {
+              url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+              name: "JavaScript",
+            },
+            {
+              url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+              name: "CSS",
+            },
           ]}
         />
       </div>

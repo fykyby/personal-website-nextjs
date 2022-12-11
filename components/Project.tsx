@@ -1,26 +1,28 @@
 import Image, { StaticImageData } from "next/image";
 import styles from "../styles/Project.module.scss";
 
+interface Icon {
+  url: string;
+  name: string;
+}
+
 interface Props {
   img: StaticImageData;
   title: string;
   repoLink: string;
   demoLink: string;
-  techIcons: Array<string>;
+  techIcons: Array<Icon>;
   noDemo?: boolean;
 }
 
 export default function Project(props: Props): JSX.Element {
-  function getTechName(className: string): string {
-    let newName = className;
-    newName = newName.slice(8, -1);
-    newName = newName.substring(0, newName.indexOf("-"));
-    return newName;
-  }
-
   return (
     <article className={styles.Project} data-aos="fade-left">
-      <img src={props.img.src} alt="project screenshot" />
+      <img
+        src={props.img.src}
+        alt="project screenshot"
+        className={styles.projectImage}
+      />
       <div className={styles.info}>
         <h3 className={styles.title}>{props.title}</h3>
         <div className={styles.bottomWrapper}>
@@ -28,15 +30,18 @@ export default function Project(props: Props): JSX.Element {
             {props.techIcons.map((item, index) => {
               return (
                 <div className={styles.iconGroup} key={index}>
-                  <i className={item}></i>
-                  <span>{getTechName(item)}</span>
+                  <img src={item.url} alt={`${item.name} icon`} />
+                  <span>{item.name}</span>
                 </div>
               );
             })}
           </div>
           <div className={styles.right}>
             <a href={props.repoLink} target="_blank" rel="noreferrer">
-              <i className="devicon-github-original"></i>
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                className={styles.ghIcon}
+              />
             </a>
             {props.noDemo ? null : (
               <a href={props.demoLink} target="_blank" rel="noreferrer">
