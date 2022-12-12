@@ -32,7 +32,7 @@ export default function Projects(): JSX.Element {
           ></path>
         </svg>
       </div>
-      <h1>Projects</h1>
+      <h1 data-aos="fade-left">Projects</h1>
       <div className={styles.projectList}>
         <Project
           title="Music Player for YouTube"
