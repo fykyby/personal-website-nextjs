@@ -5,6 +5,7 @@ import imgYtMusic from "../images/ytmusicplayer.webp";
 import imgBattleship from "../images/battleship.webp";
 import imgSnake from "../images/snake.webp";
 import imgAkacjowyKalkulator from "../images/akacjowykalkulator.webp";
+import imgFakeStore from "../images/fakestore.webp";
 
 export default function Projects(): JSX.Element {
   return (
@@ -67,6 +68,26 @@ export default function Projects(): JSX.Element {
             {
               url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
               name: "Firebase",
+            },
+          ]}
+        />
+        <Project
+          title="Fake-Store"
+          img={imgFakeStore}
+          repoLink={"https://github.com/fykyby/fake-store"}
+          demoLink={"https://fykyby.github.io/fake-store/"}
+          techIcons={[
+            {
+              url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+              name: "TypeScript",
+            },
+            {
+              url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+              name: "Vue",
+            },
+            {
+              url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
+              name: "SCSS",
             },
           ]}
         />
